@@ -15,7 +15,7 @@ import base64
 
 wp_username = os.environ['MORPH_WP_USERNAME']
 wp_password = os.environ['MORPH_WP_PASSWORD']
-wp_connectwp_url = os.environ['MORPH_WP_RAPI_URL']
+wp_connectwp_url = os.environ['MORPH_WP_CONNECT_URL']
 
 token = base64.standard_b64encode(wp_username + ':' + wp_password)
 headers = {'Authorization': 'Basic ' + token}
