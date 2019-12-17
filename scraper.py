@@ -25,7 +25,7 @@ r = requests.get(wp_connectwp_url, headers=headers)
 #print('Your post is published on ' + json.loads(r.content)['link'])
 #print('Data found: ' + json.loads(r.content)['link'])
 #print('Data found: ' + r.json())
-pretty_json = json.loads(r.text)
+pretty_json = json.loads(r.content)
 print (json.dumps(pretty_json, indent=2))
 
 # # Read in a page
