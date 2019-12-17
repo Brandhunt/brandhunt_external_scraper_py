@@ -7,6 +7,9 @@
 import scraperwiki
 import lxml.html
 import os
+import requests
+import json
+import base64
 
 #  Connect to Wordpress Site via REST API and get all the proper URLs to be scraped!
 
